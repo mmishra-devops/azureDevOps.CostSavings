@@ -26,22 +26,22 @@ steps:
     ArtifactName: 'Reports'
     publishLocation: 'Container'
 
-- task: SlackNotification@5
-  inputs:
-    SlackApiToken: '$(SlackToken)'
-    MessageAuthor: 'Azure DevOps'
-    Channel: '@enufacas'
-    NotificationType: 'UploadFile'
-    UploadFilePath: '$(Build.ArtifactStagingDirectory)/pipelines.md'
-    FileTitle: 'Pipeline Stats'
-    FileComment: 'Your Pipeline Stats'
+#- task: SlackNotification@5
+#  inputs:
+#    SlackApiToken: '$(SlackToken)'
+#    MessageAuthor: 'Azure DevOps'
+#    Channel: '@enufacas'
+#    NotificationType: 'UploadFile'
+#    UploadFilePath: '$(Build.ArtifactStagingDirectory)/pipelines.md'
+#    FileTitle: 'Pipeline Stats'
+#    FileComment: 'Your Pipeline Stats'
 
-- task: SlackNotification@5
-  inputs:
-    SlackApiToken: '$(SlackToken)'
-    MessageAuthor: 'Azure DevOps'
-    Channel: '@enufacas'
-    NotificationType: 'UploadFile'
-    UploadFilePath: '$(Build.ArtifactStagingDirectory)/users.md'
-    FileTitle: 'User Stats'
-    FileComment: 'Your User Stats'
+#- task: SlackNotification@5
+#  inputs:
+#   SlackApiToken: '$(SlackToken)'
+#    MessageAuthor: 'Azure DevOps'
+#    Channel: '@enufacas'
+#    NotificationType: 'UploadFile'
+#    UploadFilePath: '$(Build.ArtifactStagingDirectory)/users.md'
+#    FileTitle: 'User Stats'
+#    FileComment: 'Your User Stats'
